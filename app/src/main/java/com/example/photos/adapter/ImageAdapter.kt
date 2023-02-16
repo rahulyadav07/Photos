@@ -1,14 +1,13 @@
-package com.example.photos
+package com.example.photos.adapter
 
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.photos.databinding.ItemViewBinding
 import com.example.photos.models.Images
+import com.example.photos.util.imageFromUrl
 
 class ImageAdapter(private val imageList: List<Images>) : RecyclerView.Adapter<ImageAdapter.ViewHolder>() {
 
@@ -35,9 +34,3 @@ class ImageAdapter(private val imageList: List<Images>) : RecyclerView.Adapter<I
 
 }
 
-// creating one extension function here for glide
-fun ImageView.imageFromUrl(url :String){
-    Glide.with(this)
-        .load(url)
-        .into(this)
-}

@@ -8,10 +8,8 @@ import androidx.room.PrimaryKey
 data class Images(
     @PrimaryKey
     val id :String,
-
     val alt_description: String?  = "",
     val color: String,
-
     @Embedded
     val urls: Urls,
 )

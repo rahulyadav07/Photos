@@ -1,7 +1,7 @@
 package com.example.photos.di
 
 import android.content.Context
-import com.example.photos.MainActivity
+import com.example.photos.activity.MainActivity
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton

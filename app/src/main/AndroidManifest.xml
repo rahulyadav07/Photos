@@ -2,8 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name="com.example.photos.ImageApplication"
         android:allowBackup="true"
@@ -12,10 +13,15 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Photos"
+
+        android:theme="@style/SplashTheme"
         tools:targetApi="31">
         <activity
-            android:name="com.example.photos.MainActivity"
+            android:name="com.example.photos.activity.MainActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.example.photos.activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

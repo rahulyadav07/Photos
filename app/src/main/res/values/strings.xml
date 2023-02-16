@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Photos</string>
     <string name="todo">TODO</string>
+    <string name="turn_you_internet">We are facing some problem to getting the data, Please turn on your Intenet</string>
 </resources>

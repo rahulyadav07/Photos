@@ -13,4 +13,16 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/dark_orange</item>
+        <item name="android:windowBackground">@drawable/splash_drawable</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <!-- disabling darkMode -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:statusBarColor">@color/black</item>
+    </style>
+
 </resources>

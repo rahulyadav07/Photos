@@ -15,8 +15,10 @@ class ImageRepo @Inject constructor(private val imageAPI: ImageAPI, private val 
     val imageList: LiveData<List<Images>>
         get() = _imageList
 
+    /**
+     *if internet is available we will fetch the data from api other we get the data form DB
+     */
     suspend fun getImages() {
-
         if(Utils.isInternetAvailable(context)){
             val result = imageAPI.getResult("1", "30", "-QyQ414jzfzBttOvKIDJBNleloBcrjzpSR2dR2fr0r8")
             if(result.isSuccessful && result.body()!=null){
